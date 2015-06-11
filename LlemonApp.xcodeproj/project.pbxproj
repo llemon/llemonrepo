@@ -15,6 +15,15 @@
 		630886B51B2A3CF800F3365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630886B41B2A3CF800F3365B /* Images.xcassets */; };
 		630886B81B2A3CF800F3365B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630886B61B2A3CF800F3365B /* LaunchScreen.xib */; };
 		630886C41B2A3CF900F3365B /* LlemonAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630886C31B2A3CF900F3365B /* LlemonAppTests.m */; };
+		630886D81B2A3D0800F3365B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630886D71B2A3D0800F3365B /* InterfaceController.m */; };
+		630886DB1B2A3D0800F3365B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630886DA1B2A3D0800F3365B /* NotificationController.m */; };
+		630886DE1B2A3D0800F3365B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630886DD1B2A3D0800F3365B /* GlanceController.m */; };
+		630886E01B2A3D0800F3365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630886DF1B2A3D0800F3365B /* Images.xcassets */; };
+		630886E41B2A3D0800F3365B /* LlemonApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 630886E31B2A3D0800F3365B /* LlemonApp WatchKit App.app */; };
+		630886EC1B2A3D0800F3365B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630886EA1B2A3D0800F3365B /* Interface.storyboard */; };
+		630886EE1B2A3D0800F3365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630886ED1B2A3D0800F3365B /* Images.xcassets */; };
+		630886F11B2A3D0800F3365B /* LlemonApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		630887051B2A3D5B00F3365B /* libLlemonAssets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 630887001B2A3D2100F3365B /* libLlemonAssets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +34,56 @@
 			remoteGlobalIDString = 630886A01B2A3CF800F3365B;
 			remoteInfo = LlemonApp;
 		};
+		630886E51B2A3D0800F3365B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630886991B2A3CF800F3365B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630886E21B2A3D0800F3365B;
+			remoteInfo = "LlemonApp WatchKit App";
+		};
+		630886EF1B2A3D0800F3365B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630886991B2A3CF800F3365B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 630886D01B2A3D0700F3365B;
+			remoteInfo = "LlemonApp WatchKit Extension";
+		};
+		630886FF1B2A3D2100F3365B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 630886591B2A35BD00F3365B;
+			remoteInfo = LlemonAssets;
+		};
+		630887011B2A3D2100F3365B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 630886641B2A35BE00F3365B;
+			remoteInfo = LlemonAssetsTests;
+		};
+		630887031B2A3D5000F3365B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 630886581B2A35BD00F3365B;
+			remoteInfo = LlemonAssets;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		630886F81B2A3D0800F3365B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				630886F11B2A3D0800F3365B /* LlemonApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		630886A11B2A3CF800F3365B /* LlemonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LlemonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +100,21 @@
 		630886BD1B2A3CF900F3365B /* LlemonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlemonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		630886C21B2A3CF900F3365B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630886C31B2A3CF900F3365B /* LlemonAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LlemonAppTests.m; sourceTree = "<group>"; };
+		630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LlemonApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		630886D41B2A3D0800F3365B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630886D51B2A3D0800F3365B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		630886D61B2A3D0800F3365B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		630886D71B2A3D0800F3365B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		630886D91B2A3D0800F3365B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		630886DA1B2A3D0800F3365B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		630886DC1B2A3D0800F3365B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		630886DD1B2A3D0800F3365B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		630886DF1B2A3D0800F3365B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		630886E31B2A3D0800F3365B /* LlemonApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LlemonApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		630886E91B2A3D0800F3365B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630886EB1B2A3D0800F3365B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		630886ED1B2A3D0800F3365B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LlemonAssets.xcodeproj; path = ../LlemonAssets/LlemonAssets.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +122,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630887051B2A3D5B00F3365B /* libLlemonAssets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		630886BA1B2A3CF900F3365B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630886CE1B2A3D0700F3365B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,8 +146,11 @@
 		630886981B2A3CF800F3365B = {
 			isa = PBXGroup;
 			children = (
+				630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */,
 				630886A31B2A3CF800F3365B /* LlemonApp */,
 				630886C01B2A3CF900F3365B /* LlemonAppTests */,
+				630886D21B2A3D0700F3365B /* LlemonApp WatchKit Extension */,
+				630886E71B2A3D0800F3365B /* LlemonApp WatchKit App */,
 				630886A21B2A3CF800F3365B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +160,8 @@
 			children = (
 				630886A11B2A3CF800F3365B /* LlemonApp.app */,
 				630886BD1B2A3CF900F3365B /* LlemonAppTests.xctest */,
+				630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */,
+				630886E31B2A3D0800F3365B /* LlemonApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +208,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		630886D21B2A3D0700F3365B /* LlemonApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				630886D61B2A3D0800F3365B /* InterfaceController.h */,
+				630886D71B2A3D0800F3365B /* InterfaceController.m */,
+				630886D91B2A3D0800F3365B /* NotificationController.h */,
+				630886DA1B2A3D0800F3365B /* NotificationController.m */,
+				630886DC1B2A3D0800F3365B /* GlanceController.h */,
+				630886DD1B2A3D0800F3365B /* GlanceController.m */,
+				630886DF1B2A3D0800F3365B /* Images.xcassets */,
+				630886D31B2A3D0800F3365B /* Supporting Files */,
+			);
+			path = "LlemonApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		630886D31B2A3D0800F3365B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				630886D41B2A3D0800F3365B /* Info.plist */,
+				630886D51B2A3D0800F3365B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		630886E71B2A3D0800F3365B /* LlemonApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				630886EA1B2A3D0800F3365B /* Interface.storyboard */,
+				630886ED1B2A3D0800F3365B /* Images.xcassets */,
+				630886E81B2A3D0800F3365B /* Supporting Files */,
+			);
+			path = "LlemonApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		630886E81B2A3D0800F3365B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				630886E91B2A3D0800F3365B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		630886FA1B2A3D2100F3365B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				630887001B2A3D2100F3365B /* libLlemonAssets.a */,
+				630887021B2A3D2100F3365B /* LlemonAssetsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +269,13 @@
 				6308869D1B2A3CF800F3365B /* Sources */,
 				6308869E1B2A3CF800F3365B /* Frameworks */,
 				6308869F1B2A3CF800F3365B /* Resources */,
+				630886F81B2A3D0800F3365B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				630887041B2A3D5000F3365B /* PBXTargetDependency */,
+				630886F01B2A3D0800F3365B /* PBXTargetDependency */,
 			);
 			name = LlemonApp;
 			productName = LlemonApp;
@@ -160,6 +300,39 @@
 			productReference = 630886BD1B2A3CF900F3365B /* LlemonAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		630886D01B2A3D0700F3365B /* LlemonApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630886F51B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit Extension" */;
+			buildPhases = (
+				630886CD1B2A3D0700F3365B /* Sources */,
+				630886CE1B2A3D0700F3365B /* Frameworks */,
+				630886CF1B2A3D0700F3365B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630886E61B2A3D0800F3365B /* PBXTargetDependency */,
+			);
+			name = "LlemonApp WatchKit Extension";
+			productName = "LlemonApp WatchKit Extension";
+			productReference = 630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		630886E21B2A3D0800F3365B /* LlemonApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 630886F21B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit App" */;
+			buildPhases = (
+				630886E11B2A3D0800F3365B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LlemonApp WatchKit App";
+			productName = "LlemonApp WatchKit App";
+			productReference = 630886E31B2A3D0800F3365B /* LlemonApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +349,12 @@
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 630886A01B2A3CF800F3365B;
 					};
+					630886D01B2A3D0700F3365B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					630886E21B2A3D0800F3365B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 6308869C1B2A3CF800F3365B /* Build configuration list for PBXProject "LlemonApp" */;
@@ -189,13 +368,38 @@
 			mainGroup = 630886981B2A3CF800F3365B;
 			productRefGroup = 630886A21B2A3CF800F3365B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 630886FA1B2A3D2100F3365B /* Products */;
+					ProjectRef = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				630886A01B2A3CF800F3365B /* LlemonApp */,
 				630886BC1B2A3CF900F3365B /* LlemonAppTests */,
+				630886D01B2A3D0700F3365B /* LlemonApp WatchKit Extension */,
+				630886E21B2A3D0800F3365B /* LlemonApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		630887001B2A3D2100F3365B /* libLlemonAssets.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLlemonAssets.a;
+			remoteRef = 630886FF1B2A3D2100F3365B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		630887021B2A3D2100F3365B /* LlemonAssetsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LlemonAssetsTests.xctest;
+			remoteRef = 630887011B2A3D2100F3365B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6308869F1B2A3CF800F3365B /* Resources */ = {
@@ -212,6 +416,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630886CF1B2A3D0700F3365B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630886E01B2A3D0800F3365B /* Images.xcassets in Resources */,
+				630886E41B2A3D0800F3365B /* LlemonApp WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		630886E11B2A3D0800F3365B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630886EC1B2A3D0800F3365B /* Interface.storyboard in Resources */,
+				630886EE1B2A3D0800F3365B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +459,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		630886CD1B2A3D0700F3365B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				630886DB1B2A3D0800F3365B /* NotificationController.m in Sources */,
+				630886D81B2A3D0800F3365B /* InterfaceController.m in Sources */,
+				630886DE1B2A3D0800F3365B /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +476,21 @@
 			isa = PBXTargetDependency;
 			target = 630886A01B2A3CF800F3365B /* LlemonApp */;
 			targetProxy = 630886BE1B2A3CF900F3365B /* PBXContainerItemProxy */;
+		};
+		630886E61B2A3D0800F3365B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630886E21B2A3D0800F3365B /* LlemonApp WatchKit App */;
+			targetProxy = 630886E51B2A3D0800F3365B /* PBXContainerItemProxy */;
+		};
+		630886F01B2A3D0800F3365B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 630886D01B2A3D0700F3365B /* LlemonApp WatchKit Extension */;
+			targetProxy = 630886EF1B2A3D0800F3365B /* PBXContainerItemProxy */;
+		};
+		630887041B2A3D5000F3365B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LlemonAssets;
+			targetProxy = 630887031B2A3D5000F3365B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -262,6 +509,14 @@
 				630886B71B2A3CF800F3365B /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		630886EA1B2A3D0800F3365B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				630886EB1B2A3D0800F3365B /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -350,20 +605,26 @@
 		630886C81B2A3CF900F3365B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LlemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/sh1neonme/Dropbox/Xcode/LlemonAssets;
 			};
 			name = Debug;
 		};
 		630886C91B2A3CF900F3365B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = LlemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/sh1neonme/Dropbox/Xcode/LlemonAssets;
 			};
 			name = Release;
 		};
@@ -401,6 +662,62 @@
 			};
 			name = Release;
 		};
+		630886F31B2A3D0800F3365B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = LlemonApp_WatchKit_Extension;
+				INFOPLIST_FILE = "LlemonApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		630886F41B2A3D0800F3365B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = LlemonApp_WatchKit_Extension;
+				INFOPLIST_FILE = "LlemonApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		630886F61B2A3D0800F3365B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LlemonApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		630886F71B2A3D0800F3365B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LlemonApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +743,22 @@
 			buildConfigurations = (
 				630886CB1B2A3CF900F3365B /* Debug */,
 				630886CC1B2A3CF900F3365B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		630886F21B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630886F31B2A3D0800F3365B /* Debug */,
+				630886F41B2A3D0800F3365B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		630886F51B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				630886F61B2A3D0800F3365B /* Debug */,
+				630886F71B2A3D0800F3365B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
