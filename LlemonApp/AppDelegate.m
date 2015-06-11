@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <LlemonAssets/LlemonAssets.h>
 
 @interface AppDelegate ()
 
@@ -18,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [LLUtil importAllCategories];
     return YES;
 }
 

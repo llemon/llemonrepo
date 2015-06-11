@@ -23,7 +23,11 @@
 		630886EC1B2A3D0800F3365B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630886EA1B2A3D0800F3365B /* Interface.storyboard */; };
 		630886EE1B2A3D0800F3365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630886ED1B2A3D0800F3365B /* Images.xcassets */; };
 		630886F11B2A3D0800F3365B /* LlemonApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		630887051B2A3D5B00F3365B /* libLlemonAssets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 630887001B2A3D2100F3365B /* libLlemonAssets.a */; };
+		6308870B1B2A3FD700F3365B /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870A1B2A3FD700F3365B /* LLTask.m */; };
+		630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870D1B2A3FDE00F3365B /* NSObject+Localizable.m */; };
+		630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */; };
+		630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */; };
+		630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,27 +51,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 630886D01B2A3D0700F3365B;
 			remoteInfo = "LlemonApp WatchKit Extension";
-		};
-		630886FF1B2A3D2100F3365B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 630886591B2A35BD00F3365B;
-			remoteInfo = LlemonAssets;
-		};
-		630887011B2A3D2100F3365B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 630886641B2A35BE00F3365B;
-			remoteInfo = LlemonAssetsTests;
-		};
-		630887031B2A3D5000F3365B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 630886581B2A35BD00F3365B;
-			remoteInfo = LlemonAssets;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -114,7 +97,17 @@
 		630886E91B2A3D0800F3365B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630886EB1B2A3D0800F3365B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		630886ED1B2A3D0800F3365B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LlemonAssets.xcodeproj; path = ../LlemonAssets/LlemonAssets.xcodeproj; sourceTree = "<group>"; };
+		630887091B2A3FD700F3365B /* LLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTask.h; sourceTree = "<group>"; };
+		6308870A1B2A3FD700F3365B /* LLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTask.m; sourceTree = "<group>"; };
+		6308870C1B2A3FDE00F3365B /* NSObject+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Localizable.h"; sourceTree = "<group>"; };
+		6308870D1B2A3FDE00F3365B /* NSObject+Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Localizable.m"; sourceTree = "<group>"; };
+		6308870E1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SimpleConstraint.h"; sourceTree = "<group>"; };
+		6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+SimpleConstraint.m"; sourceTree = "<group>"; };
+		630887101B2A3FDE00F3365B /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		630887151B2A3FE400F3365B /* BPXLUUIDHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPXLUUIDHandler.h; sourceTree = "<group>"; };
+		630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPXLUUIDHandler.m; sourceTree = "<group>"; };
+		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LlemonPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630887051B2A3D5B00F3365B /* libLlemonAssets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +138,7 @@
 		630886981B2A3CF800F3365B = {
 			isa = PBXGroup;
 			children = (
-				630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */,
+				630887061B2A3FA500F3365B /* Assets */,
 				630886A31B2A3CF800F3365B /* LlemonApp */,
 				630886C01B2A3CF900F3365B /* LlemonAppTests */,
 				630886D21B2A3D0700F3365B /* LlemonApp WatchKit Extension */,
@@ -169,6 +161,7 @@
 		630886A31B2A3CF800F3365B /* LlemonApp */ = {
 			isa = PBXGroup;
 			children = (
+				630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */,
 				630886A81B2A3CF800F3365B /* AppDelegate.h */,
 				630886A91B2A3CF800F3365B /* AppDelegate.m */,
 				630886AE1B2A3CF800F3365B /* ViewController.h */,
@@ -250,13 +243,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		630886FA1B2A3D2100F3365B /* Products */ = {
+		630887061B2A3FA500F3365B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				630887001B2A3D2100F3365B /* libLlemonAssets.a */,
-				630887021B2A3D2100F3365B /* LlemonAssetsTests.xctest */,
+				630887091B2A3FD700F3365B /* LLTask.h */,
+				6308870A1B2A3FD700F3365B /* LLTask.m */,
+				630887071B2A3FB800F3365B /* Category */,
+				630887081B2A3FBD00F3365B /* Open Source */,
 			);
-			name = Products;
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		630887071B2A3FB800F3365B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6308870C1B2A3FDE00F3365B /* NSObject+Localizable.h */,
+				6308870D1B2A3FDE00F3365B /* NSObject+Localizable.m */,
+				6308870E1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.h */,
+				6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */,
+				630887101B2A3FDE00F3365B /* NSTimer+Blocks.h */,
+				630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		630887081B2A3FBD00F3365B /* Open Source */ = {
+			isa = PBXGroup;
+			children = (
+				630887151B2A3FE400F3365B /* BPXLUUIDHandler.h */,
+				630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */,
+			);
+			name = "Open Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +291,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				630887041B2A3D5000F3365B /* PBXTargetDependency */,
 				630886F01B2A3D0800F3365B /* PBXTargetDependency */,
 			);
 			name = LlemonApp;
@@ -368,12 +384,6 @@
 			mainGroup = 630886981B2A3CF800F3365B;
 			productRefGroup = 630886A21B2A3CF800F3365B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 630886FA1B2A3D2100F3365B /* Products */;
-					ProjectRef = 630886F91B2A3D2100F3365B /* LlemonAssets.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				630886A01B2A3CF800F3365B /* LlemonApp */,
@@ -383,23 +393,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		630887001B2A3D2100F3365B /* libLlemonAssets.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLlemonAssets.a;
-			remoteRef = 630886FF1B2A3D2100F3365B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		630887021B2A3D2100F3365B /* LlemonAssetsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = LlemonAssetsTests.xctest;
-			remoteRef = 630887011B2A3D2100F3365B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6308869F1B2A3CF800F3365B /* Resources */ = {
@@ -444,9 +437,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */,
+				630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
 				630886AA1B2A3CF800F3365B /* AppDelegate.m in Sources */,
 				630886A71B2A3CF800F3365B /* main.m in Sources */,
+				630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */,
+				6308870B1B2A3FD700F3365B /* LLTask.m in Sources */,
 				630886B01B2A3CF800F3365B /* ViewController.m in Sources */,
+				630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */,
 				630886AD1B2A3CF800F3365B /* LlemonApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,11 +484,6 @@
 			isa = PBXTargetDependency;
 			target = 630886D01B2A3D0700F3365B /* LlemonApp WatchKit Extension */;
 			targetProxy = 630886EF1B2A3D0800F3365B /* PBXContainerItemProxy */;
-		};
-		630887041B2A3D5000F3365B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LlemonAssets;
-			targetProxy = 630887031B2A3D5000F3365B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -605,9 +598,10 @@
 		630886C81B2A3CF900F3365B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = LlemonApp/LlemonPrefixHeader.pch;
 				INFOPLIST_FILE = LlemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -618,9 +612,10 @@
 		630886C91B2A3CF900F3365B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = LlemonApp/LlemonPrefixHeader.pch;
 				INFOPLIST_FILE = LlemonApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
