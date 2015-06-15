@@ -29,6 +29,8 @@
 		630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */; };
 		630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */; };
 		636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */; };
+		636BEF6D1B2EF80200DC0AB4 /* LLTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */; };
+		636BEF701B2EF88300DC0AB4 /* LLTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6F1B2EF88300DC0AB4 /* LLTimerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,9 @@
 		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LlemonPrefixHeader.pch; sourceTree = "<group>"; };
 		636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCalendarView.h; sourceTree = "<group>"; };
 		636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCalendarView.m; sourceTree = "<group>"; };
+		636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLTimerView.xib; sourceTree = "<group>"; };
+		636BEF6E1B2EF88300DC0AB4 /* LLTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTimerView.h; sourceTree = "<group>"; };
+		636BEF6F1B2EF88300DC0AB4 /* LLTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTimerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +176,9 @@
 				630886AF1B2A3CF800F3365B /* ViewController.m */,
 				636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */,
 				636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */,
+				636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */,
+				636BEF6E1B2EF88300DC0AB4 /* LLTimerView.h */,
+				636BEF6F1B2EF88300DC0AB4 /* LLTimerView.m */,
 				630886B11B2A3CF800F3365B /* Main.storyboard */,
 				630886B41B2A3CF800F3365B /* Images.xcassets */,
 				630886B61B2A3CF800F3365B /* LaunchScreen.xib */,
@@ -404,6 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636BEF6D1B2EF80200DC0AB4 /* LLTimerView.xib in Resources */,
 				630886B31B2A3CF800F3365B /* Main.storyboard in Resources */,
 				630886B81B2A3CF800F3365B /* LaunchScreen.xib in Resources */,
 				630886B51B2A3CF800F3365B /* Images.xcassets in Resources */,
@@ -444,6 +453,7 @@
 			files = (
 				636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */,
 				630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */,
+				636BEF701B2EF88300DC0AB4 /* LLTimerView.m in Sources */,
 				630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
 				630886AA1B2A3CF800F3365B /* AppDelegate.m in Sources */,
 				630886A71B2A3CF800F3365B /* main.m in Sources */,
