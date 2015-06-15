@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Entity" syncable="YES"/>
+    <entity name="LLRecord" representedClassName="LLRecord" syncable="YES">
+        <attribute name="fromTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="toTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LLTask" inverseName="records" inverseEntity="LLTask" syncable="YES"/>
+    </entity>
+    <entity name="LLTask" representedClassName="LLTask" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="months" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="weeks" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LLRecord" inverseName="task" inverseEntity="LLRecord" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Entity" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="LLRecord" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="LLTask" positionX="225" positionY="-135" width="128" height="178"/>
     </elements>
 </model>

@@ -23,14 +23,18 @@
 		630886EC1B2A3D0800F3365B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630886EA1B2A3D0800F3365B /* Interface.storyboard */; };
 		630886EE1B2A3D0800F3365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630886ED1B2A3D0800F3365B /* Images.xcassets */; };
 		630886F11B2A3D0800F3365B /* LlemonApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 630886D11B2A3D0700F3365B /* LlemonApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6308870B1B2A3FD700F3365B /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870A1B2A3FD700F3365B /* LLTask.m */; };
+		6308870B1B2A3FD700F3365B /* LLAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870A1B2A3FD700F3365B /* LLAction.m */; };
 		630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870D1B2A3FDE00F3365B /* NSObject+Localizable.m */; };
 		630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */; };
 		630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */; };
 		630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */; };
+		6350FF601B2F2ECF0060817E /* LLRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF5F1B2F2ECF0060817E /* LLRecord.m */; };
+		6350FF631B2F2ECF0060817E /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF621B2F2ECF0060817E /* LLTask.m */; };
+		6350FF661B2F2FB90060817E /* LLRecord+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF651B2F2FB90060817E /* LLRecord+Manage.m */; };
 		636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */; };
 		636BEF6D1B2EF80200DC0AB4 /* LLTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */; };
 		636BEF701B2EF88300DC0AB4 /* LLTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6F1B2EF88300DC0AB4 /* LLTimerView.m */; };
+		636BEF7D1B2F2CEA00DC0AB4 /* LLTask+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF7C1B2F2CEA00DC0AB4 /* LLTask+Manage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +104,8 @@
 		630886E91B2A3D0800F3365B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630886EB1B2A3D0800F3365B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		630886ED1B2A3D0800F3365B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		630887091B2A3FD700F3365B /* LLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTask.h; sourceTree = "<group>"; };
-		6308870A1B2A3FD700F3365B /* LLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTask.m; sourceTree = "<group>"; };
+		630887091B2A3FD700F3365B /* LLAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAction.h; sourceTree = "<group>"; };
+		6308870A1B2A3FD700F3365B /* LLAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAction.m; sourceTree = "<group>"; };
 		6308870C1B2A3FDE00F3365B /* NSObject+Localizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Localizable.h"; sourceTree = "<group>"; };
 		6308870D1B2A3FDE00F3365B /* NSObject+Localizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Localizable.m"; sourceTree = "<group>"; };
 		6308870E1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+SimpleConstraint.h"; sourceTree = "<group>"; };
@@ -110,12 +114,20 @@
 		630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		630887151B2A3FE400F3365B /* BPXLUUIDHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPXLUUIDHandler.h; sourceTree = "<group>"; };
 		630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPXLUUIDHandler.m; sourceTree = "<group>"; };
-		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LlemonPrefixHeader.pch; sourceTree = "<group>"; };
+		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LlemonPrefixHeader.pch; path = LlemonApp/LlemonPrefixHeader.pch; sourceTree = "<group>"; };
+		6350FF5E1B2F2ECF0060817E /* LLRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecord.h; sourceTree = "<group>"; };
+		6350FF5F1B2F2ECF0060817E /* LLRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecord.m; sourceTree = "<group>"; };
+		6350FF611B2F2ECF0060817E /* LLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTask.h; sourceTree = "<group>"; };
+		6350FF621B2F2ECF0060817E /* LLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTask.m; sourceTree = "<group>"; };
+		6350FF641B2F2FB90060817E /* LLRecord+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLRecord+Manage.h"; sourceTree = "<group>"; };
+		6350FF651B2F2FB90060817E /* LLRecord+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLRecord+Manage.m"; sourceTree = "<group>"; };
 		636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCalendarView.h; sourceTree = "<group>"; };
 		636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCalendarView.m; sourceTree = "<group>"; };
 		636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLTimerView.xib; sourceTree = "<group>"; };
 		636BEF6E1B2EF88300DC0AB4 /* LLTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTimerView.h; sourceTree = "<group>"; };
 		636BEF6F1B2EF88300DC0AB4 /* LLTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTimerView.m; sourceTree = "<group>"; };
+		636BEF7B1B2F2CEA00DC0AB4 /* LLTask+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLTask+Manage.h"; sourceTree = "<group>"; };
+		636BEF7C1B2F2CEA00DC0AB4 /* LLTask+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLTask+Manage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,16 @@
 		630886981B2A3CF800F3365B = {
 			isa = PBXGroup;
 			children = (
+				630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */,
+				630886AB1B2A3CF800F3365B /* LlemonApp.xcdatamodeld */,
+				6350FF611B2F2ECF0060817E /* LLTask.h */,
+				6350FF621B2F2ECF0060817E /* LLTask.m */,
+				6350FF5E1B2F2ECF0060817E /* LLRecord.h */,
+				6350FF5F1B2F2ECF0060817E /* LLRecord.m */,
+				636BEF7B1B2F2CEA00DC0AB4 /* LLTask+Manage.h */,
+				636BEF7C1B2F2CEA00DC0AB4 /* LLTask+Manage.m */,
+				6350FF641B2F2FB90060817E /* LLRecord+Manage.h */,
+				6350FF651B2F2FB90060817E /* LLRecord+Manage.m */,
 				630887061B2A3FA500F3365B /* Assets */,
 				630886A31B2A3CF800F3365B /* LlemonApp */,
 				630886C01B2A3CF900F3365B /* LlemonAppTests */,
@@ -169,7 +191,6 @@
 		630886A31B2A3CF800F3365B /* LlemonApp */ = {
 			isa = PBXGroup;
 			children = (
-				630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */,
 				630886A81B2A3CF800F3365B /* AppDelegate.h */,
 				630886A91B2A3CF800F3365B /* AppDelegate.m */,
 				630886AE1B2A3CF800F3365B /* ViewController.h */,
@@ -182,7 +203,6 @@
 				630886B11B2A3CF800F3365B /* Main.storyboard */,
 				630886B41B2A3CF800F3365B /* Images.xcassets */,
 				630886B61B2A3CF800F3365B /* LaunchScreen.xib */,
-				630886AB1B2A3CF800F3365B /* LlemonApp.xcdatamodeld */,
 				630886A41B2A3CF800F3365B /* Supporting Files */,
 			);
 			path = LlemonApp;
@@ -259,8 +279,8 @@
 		630887061B2A3FA500F3365B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				630887091B2A3FD700F3365B /* LLTask.h */,
-				6308870A1B2A3FD700F3365B /* LLTask.m */,
+				630887091B2A3FD700F3365B /* LLAction.h */,
+				6308870A1B2A3FD700F3365B /* LLAction.m */,
 				630887071B2A3FB800F3365B /* Category */,
 				630887081B2A3FBD00F3365B /* Open Source */,
 			);
@@ -456,11 +476,15 @@
 				636BEF701B2EF88300DC0AB4 /* LLTimerView.m in Sources */,
 				630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
 				630886AA1B2A3CF800F3365B /* AppDelegate.m in Sources */,
+				636BEF7D1B2F2CEA00DC0AB4 /* LLTask+Manage.m in Sources */,
 				630886A71B2A3CF800F3365B /* main.m in Sources */,
+				6350FF661B2F2FB90060817E /* LLRecord+Manage.m in Sources */,
 				630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */,
-				6308870B1B2A3FD700F3365B /* LLTask.m in Sources */,
+				6350FF601B2F2ECF0060817E /* LLRecord.m in Sources */,
+				6308870B1B2A3FD700F3365B /* LLAction.m in Sources */,
 				630886B01B2A3CF800F3365B /* ViewController.m in Sources */,
 				630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */,
+				6350FF631B2F2ECF0060817E /* LLTask.m in Sources */,
 				630886AD1B2A3CF800F3365B /* LlemonApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -786,7 +810,8 @@
 				630886AC1B2A3CF800F3365B /* LlemonApp.xcdatamodel */,
 			);
 			currentVersion = 630886AC1B2A3CF800F3365B /* LlemonApp.xcdatamodel */;
-			path = LlemonApp.xcdatamodeld;
+			name = LlemonApp.xcdatamodeld;
+			path = LlemonApp/LlemonApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

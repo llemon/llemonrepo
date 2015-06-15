@@ -12,4 +12,13 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "LLTask.h"
+#import "LLRecord.h"
+
+#import "LLTask+Manage.h"
+#import "LLRecord+Manage.h"
+
+#import "AppDelegate.h"
+#define APP_DELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
 #endif

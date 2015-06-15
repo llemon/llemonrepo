@@ -1,26 +1,34 @@
 //
 //  LLTask.h
-//  LlemonAssets
+//  LlemonApp
 //
-//  Created by 이택규 on 2015. 6. 12..
-//  Copyright (c) 2015년 Tack-gyu Lee. All rights reserved.
+//  Created by 이택규 on 2015. 6. 16..
+//  Copyright (c) 2015년 Llemon. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@class LLTask;
+@class LLRecord;
 
-typedef void (^LLTaskBlock) (LLTask *task);
+@interface LLTask : NSManagedObject
 
-@interface LLTask : NSObject
+@property (nonatomic, retain) NSString * desc;
+@property (nonatomic, retain) NSDate * fromTime;
+@property (nonatomic, retain) NSNumber * length;
+@property (nonatomic, retain) NSNumber * months;
+@property (nonatomic, retain) NSNumber * priority;
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSDate * toTime;
+@property (nonatomic, retain) NSNumber * weeks;
+@property (nonatomic, retain) NSSet *records;
+@end
 
-@property (nonatomic, readonly) NSTimeInterval delay;
-@property (nonatomic, readonly) dispatch_queue_t queue;
+@interface LLTask (CoreDataGeneratedAccessors)
 
-+ (instancetype) task;
-+ (instancetype) taskInQueue:(dispatch_queue_t)queue;
-
-- (LLTask *) continueAfterDelay:(NSTimeInterval)delay taskBlock:(LLTaskBlock)taskBlock;
-- (LLTask *) continueAfterDelay:(NSTimeInterval)delay inQueue:(dispatch_queue_t)queue taskBlock:(LLTaskBlock)taskBlock;
+- (void)addRecordsObject:(LLRecord *)value;
+- (void)removeRecordsObject:(LLRecord *)value;
+- (void)addRecords:(NSSet *)values;
+- (void)removeRecords:(NSSet *)values;
 
 @end
