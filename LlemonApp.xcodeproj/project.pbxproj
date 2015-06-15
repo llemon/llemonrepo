@@ -28,6 +28,7 @@
 		630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */; };
 		630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */; };
 		630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */; };
+		636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		630887151B2A3FE400F3365B /* BPXLUUIDHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPXLUUIDHandler.h; sourceTree = "<group>"; };
 		630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPXLUUIDHandler.m; sourceTree = "<group>"; };
 		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LlemonPrefixHeader.pch; sourceTree = "<group>"; };
+		636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCalendarView.h; sourceTree = "<group>"; };
+		636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCalendarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				630886A91B2A3CF800F3365B /* AppDelegate.m */,
 				630886AE1B2A3CF800F3365B /* ViewController.h */,
 				630886AF1B2A3CF800F3365B /* ViewController.m */,
+				636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */,
+				636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */,
 				630886B11B2A3CF800F3365B /* Main.storyboard */,
 				630886B41B2A3CF800F3365B /* Images.xcassets */,
 				630886B61B2A3CF800F3365B /* LaunchScreen.xib */,
@@ -437,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */,
 				630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */,
 				630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
 				630886AA1B2A3CF800F3365B /* AppDelegate.m in Sources */,
@@ -732,6 +738,7 @@
 				630886C91B2A3CF900F3365B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		630886CA1B2A3CF900F3365B /* Build configuration list for PBXNativeTarget "LlemonAppTests" */ = {
 			isa = XCConfigurationList;
@@ -740,6 +747,7 @@
 				630886CC1B2A3CF900F3365B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		630886F21B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -748,6 +756,7 @@
 				630886F41B2A3D0800F3365B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		630886F51B2A3D0800F3365B /* Build configuration list for PBXNativeTarget "LlemonApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +765,7 @@
 				630886F71B2A3D0800F3365B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
