@@ -8,7 +8,7 @@
 
 #import "LLRecord.h"
 
-static NSString *const recordEntityName = @"LLRecord";
+extern NSString *const recordEntityName;
 
 @interface LLRecord (Manage)
 

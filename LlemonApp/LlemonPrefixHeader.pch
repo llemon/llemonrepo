@@ -13,9 +13,13 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import "LLTask.h"
+#import "LLPlan.h"
+#import "LLGoal.h"
 #import "LLRecord.h"
 
 #import "LLTask+Manage.h"
+#import "LLPlan+Manage.h"
+#import "LLGoal+Manage.h"
 #import "LLRecord+Manage.h"
 
 #import "AppDelegate.h"

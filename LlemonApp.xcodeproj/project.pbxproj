@@ -28,8 +28,20 @@
 		630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6308870F1B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m */; };
 		630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887111B2A3FDE00F3365B /* NSTimer+Blocks.m */; };
 		630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */; };
-		6350FF601B2F2ECF0060817E /* LLRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF5F1B2F2ECF0060817E /* LLRecord.m */; };
-		6350FF631B2F2ECF0060817E /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF621B2F2ECF0060817E /* LLTask.m */; };
+		6309AFBE1B455BB500665A73 /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFBD1B455BB500665A73 /* LLTask.m */; };
+		6309AFBF1B455BB500665A73 /* LLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFBD1B455BB500665A73 /* LLTask.m */; };
+		6309AFC21B455BB600665A73 /* LLPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC11B455BB600665A73 /* LLPlan.m */; };
+		6309AFC31B455BB600665A73 /* LLPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC11B455BB600665A73 /* LLPlan.m */; };
+		6309AFC61B455BB600665A73 /* LLGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC51B455BB600665A73 /* LLGoal.m */; };
+		6309AFC71B455BB600665A73 /* LLGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC51B455BB600665A73 /* LLGoal.m */; };
+		6309AFCA1B455BB600665A73 /* LLRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC91B455BB600665A73 /* LLRecord.m */; };
+		6309AFCB1B455BB600665A73 /* LLRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFC91B455BB600665A73 /* LLRecord.m */; };
+		6309AFCE1B455BE300665A73 /* LLGoal+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFCD1B455BE300665A73 /* LLGoal+Manage.m */; };
+		6309AFCF1B455BE300665A73 /* LLGoal+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFCD1B455BE300665A73 /* LLGoal+Manage.m */; };
+		6309AFD01B455BE700665A73 /* LLTask+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF7C1B2F2CEA00DC0AB4 /* LLTask+Manage.m */; };
+		6309AFD11B455BEA00665A73 /* LLRecord+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF651B2F2FB90060817E /* LLRecord+Manage.m */; };
+		6309AFD41B455D4D00665A73 /* LLPlan+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFD31B455D4D00665A73 /* LLPlan+Manage.m */; };
+		6309AFD51B455D4D00665A73 /* LLPlan+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6309AFD31B455D4D00665A73 /* LLPlan+Manage.m */; };
 		6350FF661B2F2FB90060817E /* LLRecord+Manage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350FF651B2F2FB90060817E /* LLRecord+Manage.m */; };
 		636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BEF6A1B2EF2FD00DC0AB4 /* LLCalendarView.m */; };
 		636BEF6D1B2EF80200DC0AB4 /* LLTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636BEF6C1B2EF80200DC0AB4 /* LLTimerView.xib */; };
@@ -115,10 +127,18 @@
 		630887151B2A3FE400F3365B /* BPXLUUIDHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPXLUUIDHandler.h; sourceTree = "<group>"; };
 		630887161B2A3FE400F3365B /* BPXLUUIDHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPXLUUIDHandler.m; sourceTree = "<group>"; };
 		630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LlemonPrefixHeader.pch; path = LlemonApp/LlemonPrefixHeader.pch; sourceTree = "<group>"; };
-		6350FF5E1B2F2ECF0060817E /* LLRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecord.h; sourceTree = "<group>"; };
-		6350FF5F1B2F2ECF0060817E /* LLRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecord.m; sourceTree = "<group>"; };
-		6350FF611B2F2ECF0060817E /* LLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTask.h; sourceTree = "<group>"; };
-		6350FF621B2F2ECF0060817E /* LLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTask.m; sourceTree = "<group>"; };
+		6309AFBC1B455BB500665A73 /* LLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTask.h; sourceTree = "<group>"; };
+		6309AFBD1B455BB500665A73 /* LLTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTask.m; sourceTree = "<group>"; };
+		6309AFC01B455BB600665A73 /* LLPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlan.h; sourceTree = "<group>"; };
+		6309AFC11B455BB600665A73 /* LLPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPlan.m; sourceTree = "<group>"; };
+		6309AFC41B455BB600665A73 /* LLGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLGoal.h; sourceTree = "<group>"; };
+		6309AFC51B455BB600665A73 /* LLGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLGoal.m; sourceTree = "<group>"; };
+		6309AFC81B455BB600665A73 /* LLRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLRecord.h; sourceTree = "<group>"; };
+		6309AFC91B455BB600665A73 /* LLRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLRecord.m; sourceTree = "<group>"; };
+		6309AFCC1B455BE300665A73 /* LLGoal+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLGoal+Manage.h"; sourceTree = "<group>"; };
+		6309AFCD1B455BE300665A73 /* LLGoal+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLGoal+Manage.m"; sourceTree = "<group>"; };
+		6309AFD21B455D4D00665A73 /* LLPlan+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLPlan+Manage.h"; sourceTree = "<group>"; };
+		6309AFD31B455D4D00665A73 /* LLPlan+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLPlan+Manage.m"; sourceTree = "<group>"; };
 		6350FF641B2F2FB90060817E /* LLRecord+Manage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLRecord+Manage.h"; sourceTree = "<group>"; };
 		6350FF651B2F2FB90060817E /* LLRecord+Manage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLRecord+Manage.m"; sourceTree = "<group>"; };
 		636BEF691B2EF2FD00DC0AB4 /* LLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCalendarView.h; sourceTree = "<group>"; };
@@ -158,16 +178,24 @@
 		630886981B2A3CF800F3365B = {
 			isa = PBXGroup;
 			children = (
+				6309AFC81B455BB600665A73 /* LLRecord.h */,
+				6309AFC91B455BB600665A73 /* LLRecord.m */,
+				6309AFC41B455BB600665A73 /* LLGoal.h */,
+				6309AFC51B455BB600665A73 /* LLGoal.m */,
+				6309AFC01B455BB600665A73 /* LLPlan.h */,
+				6309AFC11B455BB600665A73 /* LLPlan.m */,
+				6309AFBC1B455BB500665A73 /* LLTask.h */,
+				6309AFBD1B455BB500665A73 /* LLTask.m */,
 				630887181B2A403E00F3365B /* LlemonPrefixHeader.pch */,
 				630886AB1B2A3CF800F3365B /* LlemonApp.xcdatamodeld */,
-				6350FF611B2F2ECF0060817E /* LLTask.h */,
-				6350FF621B2F2ECF0060817E /* LLTask.m */,
-				6350FF5E1B2F2ECF0060817E /* LLRecord.h */,
-				6350FF5F1B2F2ECF0060817E /* LLRecord.m */,
 				636BEF7B1B2F2CEA00DC0AB4 /* LLTask+Manage.h */,
 				636BEF7C1B2F2CEA00DC0AB4 /* LLTask+Manage.m */,
 				6350FF641B2F2FB90060817E /* LLRecord+Manage.h */,
 				6350FF651B2F2FB90060817E /* LLRecord+Manage.m */,
+				6309AFCC1B455BE300665A73 /* LLGoal+Manage.h */,
+				6309AFCD1B455BE300665A73 /* LLGoal+Manage.m */,
+				6309AFD21B455D4D00665A73 /* LLPlan+Manage.h */,
+				6309AFD31B455D4D00665A73 /* LLPlan+Manage.m */,
 				630887061B2A3FA500F3365B /* Assets */,
 				630886A31B2A3CF800F3365B /* LlemonApp */,
 				630886C01B2A3CF900F3365B /* LlemonAppTests */,
@@ -471,21 +499,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6309AFBE1B455BB500665A73 /* LLTask.m in Sources */,
 				636BEF6B1B2EF2FD00DC0AB4 /* LLCalendarView.m in Sources */,
 				630887121B2A3FDE00F3365B /* NSObject+Localizable.m in Sources */,
+				6309AFCA1B455BB600665A73 /* LLRecord.m in Sources */,
 				636BEF701B2EF88300DC0AB4 /* LLTimerView.m in Sources */,
 				630887131B2A3FDE00F3365B /* NSLayoutConstraint+SimpleConstraint.m in Sources */,
+				6309AFC61B455BB600665A73 /* LLGoal.m in Sources */,
 				630886AA1B2A3CF800F3365B /* AppDelegate.m in Sources */,
 				636BEF7D1B2F2CEA00DC0AB4 /* LLTask+Manage.m in Sources */,
 				630886A71B2A3CF800F3365B /* main.m in Sources */,
 				6350FF661B2F2FB90060817E /* LLRecord+Manage.m in Sources */,
+				6309AFCE1B455BE300665A73 /* LLGoal+Manage.m in Sources */,
 				630887171B2A3FE400F3365B /* BPXLUUIDHandler.m in Sources */,
-				6350FF601B2F2ECF0060817E /* LLRecord.m in Sources */,
 				6308870B1B2A3FD700F3365B /* LLAction.m in Sources */,
+				6309AFC21B455BB600665A73 /* LLPlan.m in Sources */,
 				630886B01B2A3CF800F3365B /* ViewController.m in Sources */,
 				630887141B2A3FDE00F3365B /* NSTimer+Blocks.m in Sources */,
-				6350FF631B2F2ECF0060817E /* LLTask.m in Sources */,
 				630886AD1B2A3CF800F3365B /* LlemonApp.xcdatamodeld in Sources */,
+				6309AFD41B455D4D00665A73 /* LLPlan+Manage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +533,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6309AFBF1B455BB500665A73 /* LLTask.m in Sources */,
+				6309AFCF1B455BE300665A73 /* LLGoal+Manage.m in Sources */,
+				6309AFC31B455BB600665A73 /* LLPlan.m in Sources */,
 				630886DB1B2A3D0800F3365B /* NotificationController.m in Sources */,
 				630886D81B2A3D0800F3365B /* InterfaceController.m in Sources */,
+				6309AFD51B455D4D00665A73 /* LLPlan+Manage.m in Sources */,
+				6309AFD01B455BE700665A73 /* LLTask+Manage.m in Sources */,
+				6309AFC71B455BB600665A73 /* LLGoal.m in Sources */,
+				6309AFD11B455BEA00665A73 /* LLRecord+Manage.m in Sources */,
+				6309AFCB1B455BB600665A73 /* LLRecord.m in Sources */,
 				630886DE1B2A3D0800F3365B /* GlanceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +772,7 @@
 		630886F61B2A3D0800F3365B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = LlemonApp/LlemonPrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -746,6 +787,7 @@
 		630886F71B2A3D0800F3365B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREFIX_HEADER = LlemonApp/LlemonPrefixHeader.pch;
 				INFOPLIST_FILE = "LlemonApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";

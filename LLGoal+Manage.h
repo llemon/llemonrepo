@@ -1,19 +1,15 @@
 //
-//  LLRecord.m
+//  LLGoal+Manage.h
 //  LlemonApp
 //
 //  Created by 이택규 on 2015. 7. 2..
 //  Copyright (c) 2015년 Llemon. All rights reserved.
 //
 
-#import "LLRecord.h"
-#import "LLTask.h"
+#import "LLGoal.h"
 
+extern NSString *const goalEntityName;
 
-@implementation LLRecord
-
-@dynamic from;
-@dynamic to;
-@dynamic task;
+@interface LLGoal (Manage)
 
 @end

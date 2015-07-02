@@ -8,7 +8,7 @@
 
 #import "LLTask.h"
 
-static NSString *const taskEntityName = @"LLTask";
+extern NSString *const taskEntityName;
 
 typedef NS_OPTIONS(NSUInteger, LLWeek) {
     LLWeekSunday    = (1 << 0),
@@ -20,9 +20,6 @@ typedef NS_OPTIONS(NSUInteger, LLWeek) {
     LLWeekSaturday  = (1 << 6),
 };
 
-const NSUInteger LLWeekAll       = 1111111;
-const NSUInteger LLWeekWeekend   = 1000001;
-
 typedef NS_OPTIONS(NSUInteger, LLMonth) {
     LLMonthFirst    = (1 << 0),
     LLMonthSecond   = (1 << 1),
@@ -31,7 +28,11 @@ typedef NS_OPTIONS(NSUInteger, LLMonth) {
     LLMonthFifth    = (1 << 4),
 };
 
-const NSUInteger LLMonthAll = 11111;
+extern NSUInteger const LLWeekWeekday;
+extern NSUInteger const LLWeekWeekend;
+extern NSUInteger const LLWeekAll;
+
+extern NSUInteger const LLMonthAll;
 
 @interface LLTask (Manage)
 

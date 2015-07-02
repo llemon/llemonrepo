@@ -1,5 +1,5 @@
 //
-//  LLRecord.h
+//  LLGoal.h
 //  LlemonApp
 //
 //  Created by 이택규 on 2015. 7. 2..
@@ -11,10 +11,12 @@
 
 @class LLTask;
 
-@interface LLRecord : NSManagedObject
+@interface LLGoal : NSManagedObject
 
-@property (nonatomic, retain) NSDate * from;
-@property (nonatomic, retain) NSDate * to;
+@property (nonatomic, retain) NSDate * end;
+@property (nonatomic, retain) NSNumber * goal;
+@property (nonatomic, retain) NSNumber * acheived;
+@property (nonatomic, retain) NSNumber * valid;
 @property (nonatomic, retain) LLTask *task;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "LLRecord+Manage.h"
 
+NSString *const recordEntityName = @"LLRecord";
+
 @implementation LLRecord (Manage)
 
 @end
